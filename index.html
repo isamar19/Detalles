@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Tienda Online</title>
+      <link rel="stylesheet" href="styles.css" />
+      <script src="script.js"></script>
+   </head>
+   <body onload="showSection('inicio')">
+      <nav class="containerHeaderProperties">
+         <a href="#" onclick="showSection('inicio')">Inicio</a>
+         <a href="#" onclick="showSection('registro')">Registro</a>
+         <a href="#" onclick="showSection('carrito')">Carrito de Compras</a>
+      </nav>
+      <section id="inicio" class="container">
+         <section class="containerTitle">
+            <h1 class="title">Tienda Online</h1>
+            <img
+               src="./img/inicio.jpg"
+               alt="Logo de la tienda"
+               class="imgProperties"
+               />
+         </section>
+         <div class="login-principal-container">
+            <div class="login-container">
+               <h2>INICIAR SESIÓN</h2>
+               <p>Por favor ingresa tu usuario y contraseña para poder ingresar</p>
+               <form action="#" method="POST">
+                  <input type="email" placeholder="Email" required />
+                  <input type="password" placeholder="Contraseña" required /></br>
+                  <a href="#" class="forgot-password">¿Olvidó su contraseña?</a>
+                  <button type="submit">INGRESAR</button>
+               </form>
+            </div>
+         </div>
+         <section class="loginProperties">
+         </section>
+         <section class="sectionImgsProperties">
+            <section class="sectionImgsOrganization">
+               <img
+                  src="./img/inicio-1.jpg"
+                  alt="Logo de la tienda"
+                  class="sectionImgsImg"
+                  />
+               <img
+                  src="./img/inicio-2.jpg"
+                  alt="Logo de la tienda"
+                  class="sectionImgsImg"
+                  />
+               <img
+                  src="./img/inicio-3.jpg"
+                  alt="Logo de la tienda"
+                  class="sectionImgsImg"
+                  />
+               <img
+                  src="./img/inicio-4.jpg"
+                  alt="Logo de la tienda"
+                  class="sectionImgsImg"
+                  />
+               <img
+                  src="./img/inicio-5.jpg"
+                  alt="Logo de la tienda"
+                  class="sectionImgsImg"
+                  />
+               <img
+                  src="./img/inicio-6.jpg"
+                  alt="Logo de la tienda"
+                  class="sectionImgsImg"
+                  />
+            </section>
+         </section>
+      </section>
+      <section id="registro" class="container">
+         <div class="container-registro-principal">
+            <div class="container-form">
+               <h2 class="registro-title">Registro</h2>
+               <form action="submit.php" method="POST">
+                  <label for="usuario">Usuario:</label>
+                  <input type="text" id="usuario" name="usuario" required>
+                  <label for="correo">Correo Electronico:</label>
+                  <input type="email" id="correo" name="correo" required>
+                  <label for="nombre">Nombre:</label>
+                  <input type="text" id="nombre" name="nombre" required>
+                  <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+                  <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+                  <label for="contacto">Número de Contacto:</label>
+                  <input type="number" id="contacto" name="contacto" required>
+                  <div class="checkbox-container">
+                     <input type="checkbox" id="terminos" name="terminos" required>
+                     <label for="terminos">Acepto los <a href="#">Términos y Condiciones</a></label>
+                  </div>
+                  <div class="captcha-container">
+                     <input type="checkbox" id="captcha" name="captcha" required>
+                     <label for="captcha">No soy un robot</label>
+                  </div>
+                  <button type="submit">Enviar</button>
+               </form>
+            </div>
+         </div>
+      </section>
+      <section id="carrito" class="container">
+        <div class="container-carrito-compras">
+          <div class="principal-carrito">
+             <h2>Carrito de Compras</h2>
+  <form>
+            <h3>Información del Usuario</h3>
+            <label>Usuario:</label>
+            <input
+               type="text"
+               id="usuario_carrito"
+               name="usuario_carrito"
+               /><br /><br />
+            <label>Nombre:</label>
+            <input
+               type="text"
+               id="nombre_carrito"
+               name="nombre_carrito"
+               /><br /><br />
+            <h3>Información de Pago</h3>
+            <label>Número de Tarjeta:</label>
+            <input type="text" id="tarjeta" name="tarjeta" /><br /><br />
+            <label>Fecha de Vencimiento:</label>
+                  <input type="date" id="vencimiento" name="vencimiento" required>
+            <label>CVV:</label>
+            <input type="number" id="cvv" name="cvv" maxlength="3"/><br /><br />
+            <input type="submit" value="Pagar" />
+         </form>
+          </div>
+
+        </div>
+       
+      </section>
+   </body>
+</html>
